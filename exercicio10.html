@@ -1,0 +1,20 @@
+<script>
+    var altura = parseFloat(prompt("Digite a altura da pessoa (em centimetros):"));
+    var sexo = parseInt(prompt("Digite o sexo da pessoa (1 para feminino, 2 para masculino):"));
+
+
+    let pesoIdeal;
+    if (sexo === 1) { 
+    pesoIdeal = (62.1 * altura) - 44.7;
+    } else if (sexo === 2) { 
+    pesoIdeal = (72.7 * altura) - 58;
+    } else { 
+    alert("Sexo inválido. Digite 1 para feminino ou 2 para masculino.");
+    pesoIdeal = null;
+    }
+
+    if (pesoIdeal !== null) {
+        alert(`O peso ideal para uma pessoa de ${altura}m de altura e sexo ${sexo === 1 ? "feminino" : "masculino"} é ${pesoIdeal.toFixed(2)}kg`);
+    }
+        </script>
+

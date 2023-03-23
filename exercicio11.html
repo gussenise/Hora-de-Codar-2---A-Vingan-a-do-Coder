@@ -1,0 +1,22 @@
+<script>
+        const valor1 = parseInt(prompt("Digite o primeiro valor:"));
+        const valor2 = parseInt(prompt("Digite o segundo valor:"));
+        const operacao = parseInt(prompt("Digite a operação desejada (1 para adição, 2 para subtração, 3 para divisão e 4 para multiplicação):"));
+
+        let resultado;
+        if (operacao === 1) {
+        resultado = valor1 + valor2;
+        } else if (operacao === 2) {
+        resultado = valor1 - valor2;
+        } else if (operacao === 3) {
+        resultado = valor1 / valor2;
+        } else if (operacao === 4) {
+        resultado = valor1 * valor2;
+        } else {
+        alert("Operação inválida");
+        }
+
+        alert("Resultado: " + resultado);
+
+
+</script>

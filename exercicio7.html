@@ -1,0 +1,16 @@
+<script>    
+        let soma = 0;
+        let numeros = [];
+
+        for (let i = 0; i < 6; i++) {
+        const valor = parseFloat(prompt(`Informe o ${i + 1}º valor:`));
+        numeros.push(valor);
+        if (valor < 72) {
+            soma += valor;
+        }
+        }
+
+        alert(`Números informados: ${numeros}.\nSoma dos números inferiores a 72: ${soma}.`);
+
+
+</script>

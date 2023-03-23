@@ -1,0 +1,24 @@
+<script>
+        var valor1 = parseFloat(prompt('Informe o primeiro valor:'));
+        var valor2 = parseFloat(prompt('Informe o segundo valor:'));
+        var valor3 = parseFloat(prompt('Informe o terceiro valor:'));
+
+        
+        let maiorValor = valor1;
+        let segundoMaiorValor = valor2;
+        let terceiroMaiorValor = valor3;
+        if (valor2 > maiorValor) {
+        maiorValor = valor2;
+        segundoMaiorValor = valor1;
+        }
+        if (valor3 > maiorValor) {
+        maiorValor = valor3;
+        segundoMaiorValor = valor2;
+        terceiroMaiorValor = valor1;
+        }
+
+        var soma = maiorValor + segundoMaiorValor;
+
+        alert(`A soma dos 2 maiores valores (${maiorValor} e ${segundoMaiorValor}) é ${soma}.`);
+
+</script>
